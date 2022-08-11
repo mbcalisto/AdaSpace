@@ -6,31 +6,51 @@
 //
 
 import UIKit
+import CoreData
 
 
+class ViewController: UIViewController {
+    //colocar uma tableview
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var postCelula: CellPosts!
 
-class ViewController: UIViewController, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-    }
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-    }
+    //@IBOutlet weak var lbnome: UILabel!
     
-    
-    @IBOutlet weak var lbnome: UILabel!
-    
-    var posts: [Posts] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        chamarAPI{(posts) in
-            print("posts: \(posts[0].content)")
+    var posts: [PostsCodable] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        chamarAPI { (posts) in
+            print("posts: \(posts[0].content)")
+            self.posts = posts
+        }
+        title = "Posts"
+        tableView.delegate = self
+        tableView.dataSource = self
+//        carregarPosts()
+//        tableView.register(UINib(nibName: "postCelula", bundle: nil), forCellReuseIdentifier: "postCelula")
+
+
+    }
+//    func carregarPosts() {
+//        do {
+//            self.posts = try context.fetch(Posts.fetchRequest())
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+//        } catch {
+//        }
+//    }
     
-    private func chamarAPI(completion: @escaping ([Posts]) -> ()){
+    private func chamarAPI(completion: @escaping ([PostsCodable]) -> ()){
         let url = URL(string: "http://adaspace.local/posts")!
         
         
@@ -41,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             guard let responseData = data else {return}
             
             do{
-                let posts = try JSONDecoder().decode([Posts].self, from: responseData)
+                let posts = try JSONDecoder().decode([PostsCodable].self, from: responseData)
                 completion(posts)
                 DispatchQueue.main.sync {
                     self.posts = posts
@@ -56,6 +76,33 @@ class ViewController: UIViewController, UITableViewDataSource {
         task.resume()
     }
     
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.posts.count
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let currentPosts = self.posts[indexPath.row]
+        performSegue(withIdentifier: "postCelula", sender: currentPosts)
+
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "postCelula",
+            for: indexPath
+        ) as? CellPosts else {
+            return UITableViewCell()
+        }
+
+        let workout = self.posts[indexPath.row]
+        cell.nomePost.text = workout.content.description
+        return cell
+    }
 }
 
 
