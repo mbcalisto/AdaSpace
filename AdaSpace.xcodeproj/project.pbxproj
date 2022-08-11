@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45D8BF3828A522B600136583 /* ClasseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BF3728A522B600136583 /* ClasseCell.swift */; };
+		45D8BF4428A542DC00136583 /* CadastroUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BF4328A542DC00136583 /* CadastroUsuario.swift */; };
+		45D8BF4628A542EA00136583 /* CadastroUsuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D8BF4528A542EA00136583 /* CadastroUsuario.storyboard */; };
 		AED4B3D628A3E93100C49CB2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4B3D528A3E93100C49CB2 /* API.swift */; };
 		AED5A38028A3D001001A9910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A37F28A3D001001A9910 /* AppDelegate.swift */; };
 		AED5A38228A3D001001A9910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38128A3D001001A9910 /* SceneDelegate.swift */; };
@@ -15,7 +17,6 @@
 		AED5A38728A3D001001A9910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38528A3D001001A9910 /* Main.storyboard */; };
 		AED5A38A28A3D001001A9910 /* AdaSpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38828A3D001001A9910 /* AdaSpace.xcdatamodeld */; };
 		AED5A38C28A3D002001A9910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38B28A3D002001A9910 /* Assets.xcassets */; };
-		AED5A38F28A3D002001A9910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38D28A3D002001A9910 /* LaunchScreen.storyboard */; };
 		AED5A39A28A3D002001A9910 /* AdaSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A39928A3D002001A9910 /* AdaSpaceTests.swift */; };
 		AED5A3A428A3D002001A9910 /* AdaSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A3A328A3D002001A9910 /* AdaSpaceUITests.swift */; };
 		AED5A3A628A3D002001A9910 /* AdaSpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A3A528A3D002001A9910 /* AdaSpaceUITestsLaunchTests.swift */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		45D8BF3728A522B600136583 /* ClasseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClasseCell.swift; sourceTree = "<group>"; };
+		45D8BF4328A542DC00136583 /* CadastroUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuario.swift; sourceTree = "<group>"; };
+		45D8BF4528A542EA00136583 /* CadastroUsuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastroUsuario.storyboard; sourceTree = "<group>"; };
 		AED4B3D528A3E93100C49CB2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		AED5A37C28A3D001001A9910 /* AdaSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED5A37F28A3D001001A9910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		AED5A38628A3D001001A9910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AED5A38928A3D001001A9910 /* AdaSpace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdaSpace.xcdatamodel; sourceTree = "<group>"; };
 		AED5A38B28A3D002001A9910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AED5A38E28A3D002001A9910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AED5A39028A3D002001A9910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED5A39528A3D002001A9910 /* AdaSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED5A39928A3D002001A9910 /* AdaSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaSpaceTests.swift; sourceTree = "<group>"; };
@@ -82,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45D8BF4728A542EF00136583 /* Cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				45D8BF4328A542DC00136583 /* CadastroUsuario.swift */,
+				45D8BF4528A542EA00136583 /* CadastroUsuario.storyboard */,
+			);
+			path = Cadastro;
+			sourceTree = "<group>";
+		};
+		45D8BF4828A542FB00136583 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				45D8BF3728A522B600136583 /* ClasseCell.swift */,
+				AED5A38528A3D001001A9910 /* Main.storyboard */,
+				AED4B3D528A3E93100C49CB2 /* API.swift */,
+				AED5A38328A3D001001A9910 /* ViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
 		AED5A37328A3D001001A9910 = {
 			isa = PBXGroup;
 			children = (
@@ -105,16 +127,13 @@
 		AED5A37E28A3D001001A9910 /* AdaSpace */ = {
 			isa = PBXGroup;
 			children = (
+				45D8BF4828A542FB00136583 /* Posts */,
+				45D8BF4728A542EF00136583 /* Cadastro */,
 				AED5A37F28A3D001001A9910 /* AppDelegate.swift */,
-				AED4B3D528A3E93100C49CB2 /* API.swift */,
 				AED5A38128A3D001001A9910 /* SceneDelegate.swift */,
-				AED5A38328A3D001001A9910 /* ViewController.swift */,
-				AED5A38528A3D001001A9910 /* Main.storyboard */,
 				AED5A38B28A3D002001A9910 /* Assets.xcassets */,
-				AED5A38D28A3D002001A9910 /* LaunchScreen.storyboard */,
 				AED5A39028A3D002001A9910 /* Info.plist */,
 				AED5A38828A3D001001A9910 /* AdaSpace.xcdatamodeld */,
-				45D8BF3728A522B600136583 /* ClasseCell.swift */,
 			);
 			path = AdaSpace;
 			sourceTree = "<group>";
@@ -240,8 +259,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED5A38F28A3D002001A9910 /* LaunchScreen.storyboard in Resources */,
 				AED5A38C28A3D002001A9910 /* Assets.xcassets in Resources */,
+				45D8BF4628A542EA00136583 /* CadastroUsuario.storyboard in Resources */,
 				AED5A38728A3D001001A9910 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +290,7 @@
 				AED4B3D628A3E93100C49CB2 /* API.swift in Sources */,
 				AED5A38428A3D001001A9910 /* ViewController.swift in Sources */,
 				AED5A38028A3D001001A9910 /* AppDelegate.swift in Sources */,
+				45D8BF4428A542DC00136583 /* CadastroUsuario.swift in Sources */,
 				AED5A38228A3D001001A9910 /* SceneDelegate.swift in Sources */,
 				AED5A38A28A3D001001A9910 /* AdaSpace.xcdatamodeld in Sources */,
 			);
@@ -315,14 +335,6 @@
 				AED5A38628A3D001001A9910 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AED5A38D28A3D002001A9910 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AED5A38E28A3D002001A9910 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

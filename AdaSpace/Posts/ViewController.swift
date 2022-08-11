@@ -67,7 +67,7 @@ class ViewController: UIViewController {
                     self.posts = posts
                 }
                 
-                print("name: \(posts)")
+                print("name a: \(posts)")
                 
             }catch let error{
                 print("error: \(error)")
