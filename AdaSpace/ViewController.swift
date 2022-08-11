@@ -8,7 +8,6 @@
 import UIKit
 import CoreData
 
-<<<<<<< Updated upstream
 
 class ViewController: UIViewController {
     //colocar uma tableview
@@ -16,16 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var postCelula: CellPosts!
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-=======
-class ViewController: UIViewController, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return Posts 
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    }
->>>>>>> Stashed changes
     
     //@IBOutlet weak var lbnome: UILabel!
     
