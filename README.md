@@ -7,22 +7,22 @@ Um app utilizando a API ADASPACE (Disponibilizada pela Apple Academy - Uso Inter
 ADASPACE foi um challenge de programação onde foi desafiado nossos conhecimentos relacionados à conexão com API. Feito totalmente em UIKIT, o app consegue ser utilizado em diversas telas. O challenge corria por duas semanas, nosso principal foco foram as principais funções, e as que nos foi requisitada.
 Priorizamos as conexões e consumos de API, e como o tempo era curto falta na questão de design. Porém, segue as principais funções que foram pedidas e atribuídas nesse Challenge:
 
-[X] Pair Programming
-[X] Implementar a listagem de todos os Posts
-[X] Implementar Cadastro de Usuário
-[X] Implementar Login & Logout
-[X] Implementar Criação de Post com texto simples
-[X] Consumir pelo menos uma rota usando CompletionHandler
-[X] Consumir pelo menos uma rota usando Async/Await
+[X] Pair Programming<br>
+[X] Implementar a listagem de todos os Posts<br>
+[X] Implementar Cadastro de Usuário<br>
+[X] Implementar Login & Logout<br>
+[X] Implementar Criação de Post com texto simples<br>
+[X] Consumir pelo menos uma rota usando CompletionHandler<br>
+[X] Consumir pelo menos uma rota usando Async/Await<br>
 
 ## Qual futuro da aplicação?
 
 O futuro da aplicação é:
 
-[ ] Alterar e Inserir totalmente o design da aplicação
-[ ] Implementar Remoção de Usuário
-[ ] Armazenar Token de autenticação de maneira segura
-[ ] Fazer testes unitários da camada de redes
+[ ] Alterar e Inserir totalmente o design da aplicação<br>
+[ ] Implementar Remoção de Usuário<br>
+[ ] Armazenar Token de autenticação de maneira segura<br>
+[ ] Fazer testes unitários da camada de redes<br>
 
 ## Documentação
 
