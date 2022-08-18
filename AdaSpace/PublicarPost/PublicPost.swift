@@ -30,6 +30,7 @@ class PublicPost: UIViewController  {
         }
 
         let BearerAuth = "lga0KoqHPS+RbX83Hzj6NA=="
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("text/plain", forHTTPHeaderField: "Content-Type")
@@ -44,8 +45,7 @@ class PublicPost: UIViewController  {
                 return
             }
             do{
-                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                print("sucesso: \(response)")
+                let _ = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
             }
             catch{
                 print(error)

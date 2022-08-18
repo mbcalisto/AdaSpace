@@ -19,15 +19,15 @@ class LoginUsuario: UIViewController, URLSessionDelegate {
     }
 
     @IBAction func sendUser(_ sender: Any) {
-        makePostRequest()
+        loginUsuario()
     }
-    func makePostRequest(){
+
+    func loginUsuario(){
         guard let url = URL(string: "http://adaspace.local/users/login") else {
             return
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let username = lbEmailLogin.text
         let password = lbPasswordLogin.text
@@ -37,14 +37,13 @@ class LoginUsuario: UIViewController, URLSessionDelegate {
         let base64LoginString = loginData.base64EncodedString()
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
 
+
         let task = URLSession.shared.dataTask(with: request){ data, _, error in
             guard let data = data, error == nil else{
                 return
             }
             do{
-                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                print("sucesso: \(response)")
-
+                let _ = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
             }
             catch{
                 print(error)

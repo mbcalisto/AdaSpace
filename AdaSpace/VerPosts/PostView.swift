@@ -12,9 +12,6 @@ import CoreData
 class PostView: UIViewController {
     //colocar uma tableview
     @IBOutlet weak var tableView: UITableView!
-
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
     
     var posts: [PostsCodable] = [] {
         didSet {
@@ -27,7 +24,6 @@ class PostView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         chamarAPI { (posts) in
-            print("posts: \(posts[0].content)")
             self.posts = posts
         }
         title = "Posts"
@@ -39,8 +35,7 @@ class PostView: UIViewController {
     
     private func chamarAPI(completion: @escaping ([PostsCodable]) -> ()){
         let url = URL(string: "http://adaspace.local/posts")!
-        
-        
+
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             print("response: \(String(describing: response))")
             print("error: \(String(describing: error))")
@@ -53,9 +48,6 @@ class PostView: UIViewController {
                 DispatchQueue.main.sync {
                     self.posts = posts
                 }
-                
-                print("name a: \(posts)")
-                
             }catch let error{
                 print("error: \(error)")
             }
@@ -86,8 +78,8 @@ extension PostView: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
 
-        let workout = self.posts[indexPath.row]
-        cell.nomePost.text = workout.content.description
+        let descPost = self.posts[indexPath.row]
+        cell.nomePost.text = descPost.content.description
         return cell
     }
 }

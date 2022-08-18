@@ -34,7 +34,7 @@ class CadastroUsuario: UIViewController {
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
         let body: [String: AnyHashable] = [
             "name": lbNomeCadastro.text,
             "email": lbEmailCadastro.text,
@@ -47,8 +47,7 @@ class CadastroUsuario: UIViewController {
                 return
             }
             do{
-                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                print("sucesso: \(response)")
+                let _ = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
 
             }
             catch{
@@ -57,7 +56,5 @@ class CadastroUsuario: UIViewController {
         }
         task.resume()
     }
-
-
 }
 
