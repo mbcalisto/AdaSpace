@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Post View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PostView" customModule="AdaSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,22 +20,23 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCelula" rowHeight="66" id="GWy-LC-yXT" customClass="CellPosts" customModule="AdaSpace" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCelula" id="GWy-LC-yXT" customClass="CellPosts" customModule="AdaSpace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GWy-LC-yXT" id="toY-u1-jDD" customClass="CellPosts" customModule="AdaSpace" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UR-aI-M2h">
-                                                    <rect key="frame" x="20" y="22" width="46" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UR-aI-M2h">
+                                                    <rect key="frame" x="184.5" y="11.5" width="45.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4UR-aI-M2h" firstAttribute="width" secondItem="toY-u1-jDD" secondAttribute="height" multiplier="23:33" id="l8c-ee-plm"/>
+                                                <constraint firstItem="4UR-aI-M2h" firstAttribute="centerX" secondItem="toY-u1-jDD" secondAttribute="centerX" id="8fE-WB-QPv"/>
+                                                <constraint firstItem="4UR-aI-M2h" firstAttribute="centerY" secondItem="toY-u1-jDD" secondAttribute="centerY" id="Sku-At-ZpI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -54,14 +55,45 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iXM-IJ-pAa" secondAttribute="bottom" id="zSV-b7-dMP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RcC-Zz-Cpj"/>
+                    <navigationItem key="navigationItem" id="RcC-Zz-Cpj">
+                        <barButtonItem key="leftBarButtonItem" image="square.and.pencil" catalog="system" style="plain" id="sVR-3j-pxC">
+                            <connections>
+                                <segue destination="DmB-ry-9Lv" kind="showDetail" id="qUz-sn-T16"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="person.circle" catalog="system" style="plain" id="YsV-w5-C6Q">
+                            <connections>
+                                <segue destination="z0U-YM-5Vw" kind="show" id="wu0-QG-gW6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="iXM-IJ-pAa" id="oII-bj-OHg"/>
+                        <outlet property="tableView" destination="iXM-IJ-pAa" id="sdl-mU-8Pe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--PublicPost-->
+        <scene sceneID="vea-uW-71g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PublicPost" id="DmB-ry-9Lv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zcE-3f-Rnn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJi-gq-AI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="-46"/>
+        </scene>
+        <!--InfoUsuario-->
+        <scene sceneID="znq-Eg-TOs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InfoUsuario" id="z0U-YM-5Vw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="67v-xv-muy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sb3-fn-Bq4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720" y="51"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ThF-rE-xw5">
@@ -83,6 +115,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

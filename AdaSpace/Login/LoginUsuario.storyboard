@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2iy-d5-mC7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Usuario-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginUsuario" customModule="AdaSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyZ-gS-R3f">
+                                <rect key="frame" x="20" y="304" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Não tem cadastro? Clique aqui!"/>
+                                <connections>
+                                    <segue destination="hb9-CQ-zhi" kind="presentation" id="7PD-Eh-arK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLM-C8-3bb">
+                                <rect key="frame" x="41.5" y="149.5" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ls8-3O-lkq">
+                                <rect key="frame" x="41.5" y="244.5" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCW-Of-W4r">
+                                <rect key="frame" x="41.5" y="108.5" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKU-jF-SPd">
+                                <rect key="frame" x="41.5" y="203.5" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmM-Os-GWC">
+                                <rect key="frame" x="160" y="367" width="95" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Entrar" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="sendUser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Nda-mZ-A9K"/>
+                                    <segue destination="QTR-f5-gAr" kind="show" id="YSw-s0-4Cr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mLM-C8-3bb" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="BOS-0i-edm"/>
+                            <constraint firstItem="LCW-Of-W4r" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="BUJ-Cd-q8W"/>
+                            <constraint firstItem="mKU-jF-SPd" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="LHa-Kd-h4V"/>
+                            <constraint firstItem="ls8-3O-lkq" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="NPz-NW-qp2"/>
+                            <constraint firstItem="LCW-Of-W4r" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="NdK-tI-wMG"/>
+                            <constraint firstItem="ls8-3O-lkq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="VcR-OL-ZfY"/>
+                            <constraint firstItem="mKU-jF-SPd" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0234375" id="WdV-Br-L8i"/>
+                            <constraint firstItem="mLM-C8-3bb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XLD-mQ-F0T"/>
+                            <constraint firstItem="mKU-jF-SPd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Yu1-GA-cuX"/>
+                            <constraint firstItem="mKU-jF-SPd" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="abM-PX-kMM"/>
+                            <constraint firstItem="mLM-C8-3bb" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0379464" id="d83-nH-5wp"/>
+                            <constraint firstItem="ls8-3O-lkq" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="hIb-8d-rQE"/>
+                            <constraint firstItem="LCW-Of-W4r" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0234375" id="iBu-EE-GaI"/>
+                            <constraint firstItem="mLM-C8-3bb" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="qoQ-S3-nyc"/>
+                            <constraint firstItem="ls8-3O-lkq" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0379464" id="weS-k2-EZO"/>
+                            <constraint firstItem="LCW-Of-W4r" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="zgN-Qc-Ds0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mp1-LW-GCB"/>
+                    <connections>
+                        <outlet property="lbEmailLogin" destination="mLM-C8-3bb" id="aPU-jb-Rx0"/>
+                        <outlet property="lbPasswordLogin" destination="ls8-3O-lkq" id="Oaj-JQ-21a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="72.991071428571431"/>
+        </scene>
+        <!--CadastroUsuario-->
+        <scene sceneID="QMN-Iz-Rlt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CadastroUsuario" id="hb9-CQ-zhi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="af2-uo-1Kg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyT-NP-TB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="-75"/>
+        </scene>
+        <!--PostView-->
+        <scene sceneID="kcP-Ag-b1X">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PostView" storyboardName="PostView" id="QTR-f5-gAr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Eca-R5-aSH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cl-LJ-HOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dV0-Jl-9Mw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2iy-d5-mC7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rro-q9-IvM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="o39-m9-YnW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofy-Em-f9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

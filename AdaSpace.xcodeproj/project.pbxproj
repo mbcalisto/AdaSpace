@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45D8BF3828A522B600136583 /* ClasseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BF3728A522B600136583 /* ClasseCell.swift */; };
+		451D3C8E28ABD38800494BD2 /* LoginUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D3C8D28ABD38800494BD2 /* LoginUsuario.swift */; };
+		451D3C9028ABD3C300494BD2 /* LoginUsuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451D3C8F28ABD3C300494BD2 /* LoginUsuario.storyboard */; };
+		451DC1F928AD307800A78709 /* PublicPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DC1F828AD307800A78709 /* PublicPost.swift */; };
+		451DC1FB28AD31C600A78709 /* PublicPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1FA28AD31C600A78709 /* PublicPost.storyboard */; };
+		451DC1FE28AD336100A78709 /* InfoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DC1FD28AD336100A78709 /* InfoUsuario.swift */; };
+		451DC20028AD337200A78709 /* InfoUsuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1FF28AD337200A78709 /* InfoUsuario.storyboard */; };
+		45D8BF3828A522B600136583 /* CellPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BF3728A522B600136583 /* CellPosts.swift */; };
 		45D8BF4428A542DC00136583 /* CadastroUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BF4328A542DC00136583 /* CadastroUsuario.swift */; };
 		45D8BF4628A542EA00136583 /* CadastroUsuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D8BF4528A542EA00136583 /* CadastroUsuario.storyboard */; };
 		AED4B3D628A3E93100C49CB2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4B3D528A3E93100C49CB2 /* API.swift */; };
 		AED5A38028A3D001001A9910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A37F28A3D001001A9910 /* AppDelegate.swift */; };
 		AED5A38228A3D001001A9910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38128A3D001001A9910 /* SceneDelegate.swift */; };
-		AED5A38428A3D001001A9910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38328A3D001001A9910 /* ViewController.swift */; };
-		AED5A38728A3D001001A9910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38528A3D001001A9910 /* Main.storyboard */; };
+		AED5A38428A3D001001A9910 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38328A3D001001A9910 /* PostView.swift */; };
+		AED5A38728A3D001001A9910 /* PostView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38528A3D001001A9910 /* PostView.storyboard */; };
 		AED5A38A28A3D001001A9910 /* AdaSpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED5A38828A3D001001A9910 /* AdaSpace.xcdatamodeld */; };
 		AED5A38C28A3D002001A9910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A38B28A3D002001A9910 /* Assets.xcassets */; };
 		AED5A39A28A3D002001A9910 /* AdaSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A39928A3D002001A9910 /* AdaSpaceTests.swift */; };
@@ -40,15 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45D8BF3728A522B600136583 /* ClasseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClasseCell.swift; sourceTree = "<group>"; };
+		451D3C8D28ABD38800494BD2 /* LoginUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsuario.swift; sourceTree = "<group>"; };
+		451D3C8F28ABD3C300494BD2 /* LoginUsuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginUsuario.storyboard; sourceTree = "<group>"; };
+		451DC1F828AD307800A78709 /* PublicPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicPost.swift; sourceTree = "<group>"; };
+		451DC1FA28AD31C600A78709 /* PublicPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PublicPost.storyboard; sourceTree = "<group>"; };
+		451DC1FD28AD336100A78709 /* InfoUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUsuario.swift; sourceTree = "<group>"; };
+		451DC1FF28AD337200A78709 /* InfoUsuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoUsuario.storyboard; sourceTree = "<group>"; };
+		45D8BF3728A522B600136583 /* CellPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPosts.swift; sourceTree = "<group>"; };
 		45D8BF4328A542DC00136583 /* CadastroUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuario.swift; sourceTree = "<group>"; };
 		45D8BF4528A542EA00136583 /* CadastroUsuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastroUsuario.storyboard; sourceTree = "<group>"; };
 		AED4B3D528A3E93100C49CB2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		AED5A37C28A3D001001A9910 /* AdaSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED5A37F28A3D001001A9910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED5A38128A3D001001A9910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AED5A38328A3D001001A9910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AED5A38628A3D001001A9910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AED5A38328A3D001001A9910 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		AED5A38628A3D001001A9910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PostView.storyboard; sourceTree = "<group>"; };
 		AED5A38928A3D001001A9910 /* AdaSpace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdaSpace.xcdatamodel; sourceTree = "<group>"; };
 		AED5A38B28A3D002001A9910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AED5A39028A3D002001A9910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +96,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451D3C8C28ABD37400494BD2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				451D3C8D28ABD38800494BD2 /* LoginUsuario.swift */,
+				451D3C8F28ABD3C300494BD2 /* LoginUsuario.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		451DC1F728AD304700A78709 /* PublicarPost */ = {
+			isa = PBXGroup;
+			children = (
+				451DC1F828AD307800A78709 /* PublicPost.swift */,
+				451DC1FA28AD31C600A78709 /* PublicPost.storyboard */,
+			);
+			path = PublicarPost;
+			sourceTree = "<group>";
+		};
+		451DC1FC28AD334100A78709 /* InfoUsuario */ = {
+			isa = PBXGroup;
+			children = (
+				451DC1FD28AD336100A78709 /* InfoUsuario.swift */,
+				451DC1FF28AD337200A78709 /* InfoUsuario.storyboard */,
+			);
+			path = InfoUsuario;
+			sourceTree = "<group>";
+		};
 		45D8BF4728A542EF00136583 /* Cadastro */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,15 +132,15 @@
 			path = Cadastro;
 			sourceTree = "<group>";
 		};
-		45D8BF4828A542FB00136583 /* Posts */ = {
+		45D8BF4828A542FB00136583 /* VerPosts */ = {
 			isa = PBXGroup;
 			children = (
-				45D8BF3728A522B600136583 /* ClasseCell.swift */,
-				AED5A38528A3D001001A9910 /* Main.storyboard */,
+				45D8BF3728A522B600136583 /* CellPosts.swift */,
+				AED5A38528A3D001001A9910 /* PostView.storyboard */,
 				AED4B3D528A3E93100C49CB2 /* API.swift */,
-				AED5A38328A3D001001A9910 /* ViewController.swift */,
+				AED5A38328A3D001001A9910 /* PostView.swift */,
 			);
-			path = Posts;
+			path = VerPosts;
 			sourceTree = "<group>";
 		};
 		AED5A37328A3D001001A9910 = {
@@ -127,7 +166,10 @@
 		AED5A37E28A3D001001A9910 /* AdaSpace */ = {
 			isa = PBXGroup;
 			children = (
-				45D8BF4828A542FB00136583 /* Posts */,
+				451DC1FC28AD334100A78709 /* InfoUsuario */,
+				451DC1F728AD304700A78709 /* PublicarPost */,
+				451D3C8C28ABD37400494BD2 /* Login */,
+				45D8BF4828A542FB00136583 /* VerPosts */,
 				45D8BF4728A542EF00136583 /* Cadastro */,
 				AED5A37F28A3D001001A9910 /* AppDelegate.swift */,
 				AED5A38128A3D001001A9910 /* SceneDelegate.swift */,
@@ -259,9 +301,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451DC1FB28AD31C600A78709 /* PublicPost.storyboard in Resources */,
+				451DC20028AD337200A78709 /* InfoUsuario.storyboard in Resources */,
 				AED5A38C28A3D002001A9910 /* Assets.xcassets in Resources */,
 				45D8BF4628A542EA00136583 /* CadastroUsuario.storyboard in Resources */,
-				AED5A38728A3D001001A9910 /* Main.storyboard in Resources */,
+				AED5A38728A3D001001A9910 /* PostView.storyboard in Resources */,
+				451D3C9028ABD3C300494BD2 /* LoginUsuario.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D8BF3828A522B600136583 /* ClasseCell.swift in Sources */,
+				45D8BF3828A522B600136583 /* CellPosts.swift in Sources */,
 				AED4B3D628A3E93100C49CB2 /* API.swift in Sources */,
-				AED5A38428A3D001001A9910 /* ViewController.swift in Sources */,
+				451DC1FE28AD336100A78709 /* InfoUsuario.swift in Sources */,
+				AED5A38428A3D001001A9910 /* PostView.swift in Sources */,
+				451DC1F928AD307800A78709 /* PublicPost.swift in Sources */,
 				AED5A38028A3D001001A9910 /* AppDelegate.swift in Sources */,
 				45D8BF4428A542DC00136583 /* CadastroUsuario.swift in Sources */,
 				AED5A38228A3D001001A9910 /* SceneDelegate.swift in Sources */,
 				AED5A38A28A3D001001A9910 /* AdaSpace.xcdatamodeld in Sources */,
+				451D3C8E28ABD38800494BD2 /* LoginUsuario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +377,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AED5A38528A3D001001A9910 /* Main.storyboard */ = {
+		AED5A38528A3D001001A9910 /* PostView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AED5A38628A3D001001A9910 /* Base */,
 			);
-			name = Main.storyboard;
+			name = PostView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -466,7 +514,7 @@
 				INFOPLIST_FILE = AdaSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginUsuario;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +542,7 @@
 				INFOPLIST_FILE = AdaSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginUsuario;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

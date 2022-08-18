@@ -9,14 +9,12 @@ import UIKit
 import CoreData
 
 
-class ViewController: UIViewController {
+class PostView: UIViewController {
     //colocar uma tableview
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var postCelula: CellPosts!
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    //@IBOutlet weak var lbnome: UILabel!
+
     
     var posts: [PostsCodable] = [] {
         didSet {
@@ -35,20 +33,9 @@ class ViewController: UIViewController {
         title = "Posts"
         tableView.delegate = self
         tableView.dataSource = self
-//        carregarPosts()
-//        tableView.register(UINib(nibName: "postCelula", bundle: nil), forCellReuseIdentifier: "postCelula")
-
 
     }
-//    func carregarPosts() {
-//        do {
-//            self.posts = try context.fetch(Posts.fetchRequest())
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-//        } catch {
-//        }
-//    }
+
     
     private func chamarAPI(completion: @escaping ([PostsCodable]) -> ()){
         let url = URL(string: "http://adaspace.local/posts")!
@@ -78,7 +65,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension PostView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.posts.count
